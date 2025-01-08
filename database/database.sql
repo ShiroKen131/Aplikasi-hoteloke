@@ -31,3 +31,9 @@ CREATE TABLE reservasi (
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (kamar_id) REFERENCES kamar(id)
 );
+
+CREATE TABLE resepsionis  (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    shift INT,
+);

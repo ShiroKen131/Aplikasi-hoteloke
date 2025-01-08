@@ -203,6 +203,9 @@ $email = $_SESSION['email'];
                       </div>
                     </div>
                   </div>
+                   
+                  <a href="reservasi.php" class="button1">Reservasi</a>
+
             </section>
 
             <!--=============== Akun ===============-->
