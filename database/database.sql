@@ -19,7 +19,7 @@ CREATE TABLE kamar (
     status ENUM('tersedia', 'dipesan', 'ditempati') DEFAULT 'tersedia'
 );
 
--- Tabel Reservasi
+
 CREATE TABLE reservasi (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
@@ -30,10 +30,5 @@ CREATE TABLE reservasi (
     status ENUM('menunggu', 'dikonfirmasi', 'selesai', 'dibatalkan') DEFAULT 'menunggu',
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (kamar_id) REFERENCES kamar(id)
-);
-
-CREATE TABLE resepsionis  (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) UNIQUE NOT NULL,
-    shift INT,
+      FOREIGN KEY (username) REFERENCES users(username),
 );

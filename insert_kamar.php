@@ -4,15 +4,14 @@ include 'config/koneksi.php';
 
 // Array data kamar
 $kamar_data = [
-    ['101', 'Regular', 500000, 'tersedia'],
-    ['102', 'Regular', 500000, 'tersedia'],
-    ['103', 'Regular', 500000, 'tersedia'],
-    ['201', 'Luxury', 1000000, 'tersedia'],
-    ['202', 'Luxury', 1000000, 'tersedia'],
-    ['203', 'Luxury', 1000000, 'tersedia'],
-    ['301', 'President', 2000000, 'tersedia'],
-    ['302', 'President', 2000000, 'tersedia'],
-    ['104', 'Regular', 500000, 'tersedia']
+    ['111', 'Regular', 500000, 'tersedia'],
+    ['122', 'Regular', 500000, 'tersedia'],
+    ['133', 'Regular', 500000, 'tersedia'],
+    ['211', 'Luxury', 1000000, 'tersedia'],
+    ['222', 'Luxury', 1000000, 'tersedia'],
+    ['233', 'Luxury', 1000000, 'tersedia'],
+    ['311', 'President', 2000000, 'tersedia'],
+    ['322', 'President', 2000000, 'tersedia'],
 ];
 
 foreach ($kamar_data as $kamar) {
